@@ -13,13 +13,14 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  deploy_dockerhub_single_arch:
+  deploy_dockerhub_multi_arch:
     name: Deploy to DockerHub
     runs-on: ubuntu-latest
     strategy:
       matrix:
         docker-platform:
           - linux/amd64
+          - linux/arm64
 
     # Set job-wide environment variables
     #  - REPO: repo name on dockerhub
