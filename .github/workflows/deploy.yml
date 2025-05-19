@@ -26,8 +26,8 @@ jobs:
     #  - REPO: repo name on dockerhub
     #  - IMAGE: image name on dockerhub
     env:
-      REPO: mikenye
-      IMAGE: picard
+      REPO: eimigueloliveir
+      IMAGE: docker-picard
     steps:
 
       # Check out our code
